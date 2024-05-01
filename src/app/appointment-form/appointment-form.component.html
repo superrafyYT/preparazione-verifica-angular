@@ -1,0 +1,38 @@
+<!-- appointment-form.component.html -->
+<div class="container">
+    <div class="form-box">
+      <h2>Appointment Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" [(ngModel)]="formData.surname" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" [(ngModel)]="formData.address">
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="formData.phoneNumber" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date of Appointment:</label>
+          <input type="date" id="date" name="date" [(ngModel)]="formData.date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time of Appointment:</label>
+          <input type="time" id="time" name="time" [(ngModel)]="formData.time" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
